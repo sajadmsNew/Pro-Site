@@ -149,7 +149,7 @@ class HeaderInput extends React.Component {
                   style={this.style}
                   placeholder={t("Material") + "  "}
                   searchable={true}
-                  clearable={true}
+                  clearable={false}
                   options={products}
                   onChange={value => this.onChange(value)}
                   className={styles.selectDropdown + " data-hj-whitelist"}
