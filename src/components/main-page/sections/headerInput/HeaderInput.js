@@ -175,7 +175,7 @@ class HeaderInput extends React.Component {
               </div>
             </div>
             <button className={styles.submitButton} onClick={this.redirect}>
-              Weither
+              WEITHER
             </button>
           </div>
           <div className={styles.diagonalBackgroundSquare}></div>
