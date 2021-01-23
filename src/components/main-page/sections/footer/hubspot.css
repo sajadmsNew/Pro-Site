@@ -1,0 +1,262 @@
+
+/* Hubspot forms */
+.newsletterHubspotFormContainer form {
+  margin-bottom: 32px;
+}
+
+.newsletterHubspotFormContainer a:visited,
+.newsletterHubspotFormContainer a {
+  color:blue;
+}
+
+
+.newsletterHubspotFormContainer .hs-firstname {
+  margin-right: 20px;
+}
+.newsletterHubspotFormContainer .hs-firstname, .newsletterHubspotFormContainer .hs-lastname {
+  width: calc(50% - 10px);
+  display: inline-block;
+}
+.newsletterHubspotFormContainer .hs-email, .newsletterHubspotFormContainer .hs-firstname, .newsletterHubspotFormContainer .hs-lastname, .newsletterHubspotFormContainer .hs-segmente {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+
+
+.newsletterHubspotFormContainer .hs-email>label, .newsletterHubspotFormContainer .hs-firstname>label, .newsletterHubspotFormContainer .hs-lastname>label, .newsletterHubspotFormContainer .hs-segmente>label {
+  display: none;
+}
+
+
+.newsletterHubspotFormContainer .hs-form-required {
+  display: none;
+}
+
+
+
+.newsletterHubspotFormContainer .hs-email input.error, .newsletterHubspotFormContainer .hs-firstname input.error, .newsletterHubspotFormContainer .hs-lastname input.error, .newsletterHubspotFormContainer .hs-segmente select.error {
+  box-shadow: inset 0 -2px 0 #b00020;
+}
+.newsletterHubspotFormContainer input[type=email]{
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.38);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .5px;
+  color: rgba(0,0,0,.8);
+  padding: 18px 14px 14px;
+  border: none;
+  width: 420px;
+}
+
+
+
+
+
+
+
+.newsletterHubspotFormContainer input[type=text] {
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.38);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .5px;
+  color: rgba(0,0,0,.8);
+  padding: 18px 14px 14px;
+  border: none;
+  width: 186px;
+}
+
+
+
+.newsletterHubspotFormContainer .hs-email ul.hs-error-msgs, .newsletterHubspotFormContainer .hs-firstname ul.hs-error-msgs, .newsletterHubspotFormContainer .hs-lastname ul.hs-error-msgs, .newsletterHubspotFormContainer .hs-segmente ul.hs-error-msgs {
+  position: absolute;
+}
+.newsletterHubspotFormContainer ul.hs-error-msgs {
+  list-style: none;
+  padding-left: 12px;
+  margin-bottom: 0;
+}
+
+
+
+.newsletterHubspotFormContainer .hs-email ul.hs-error-msgs, .newsletterHubspotFormContainer .hs-firstname ul.hs-error-msgs, .newsletterHubspotFormContainer .hs-lastname ul.hs-error-msgs, .newsletterHubspotFormContainer .hs-segmente ul.hs-error-msgs {
+  position: absolute;
+}
+.newsletterHubspotFormContainer ul.hs-error-msgs {
+  list-style: none;
+  padding-left: 12px;
+  margin-bottom: 0;
+}
+
+
+
+.newsletterHubspotFormContainer .hs-email, .newsletterHubspotFormContainer .hs-firstname, .newsletterHubspotFormContainer .hs-lastname, .newsletterHubspotFormContainer .hs-segmente {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+
+.newsletterHubspotFormContainer ul.hs-error-msgs label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: .4px;
+  color: #b00020;
+  margin-bottom: 0;
+}
+
+
+
+
+
+.newsletterHubspotFormContainer .hs-segmente select {
+ border:none;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.38);
+  padding: 18px 14px 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: .5px;
+  color: rgba(0,0,0,.8);
+  background-color: white;
+  width: 448px;
+}
+
+
+
+.hs_subscribed.hs-subscribed{
+
+  margin-top: 50px;
+}
+
+
+
+.newsletterHubspotFormContainer .hs-subscribed legend {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .4px;
+  color: rgba(0,0,0,.6);
+  margin-top: 24px;
+}
+
+
+.newsletterHubspotFormContainer .hs-subscribed ul.inputs-list span {
+  font-weight: 400;
+  position: relative;
+  top: -3px;
+}
+
+
+
+.newsletterHubspotFormContainer .hs-subscribed ul.inputs-list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .25px;
+  color: rgba(0,0,0,.6);
+  margin-top: 12px;
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.newsletterHubspotFormContainer .hs-subscribed ul.inputs-list input[type=checkbox] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+
+.newsletterHubspotFormContainer input[type=submit] {
+  background: #f0a60e;
+  box-shadow: 0 2px 2px rgba(0,0,0,.24);
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-feature-settings: "liga" off;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 1140px) and (min-width: 768px)  {
+
+  .newsletterHubspotFormContainer .hs-firstname, .newsletterHubspotFormContainer .hs-lastname {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .newsletterHubspotFormContainer input[type=text],
+  .newsletterHubspotFormContainer input[type=email]{ 
+    width:252px;
+  }
+
+
+.newsletterHubspotFormContainer .hs-segmente select {
+    width:100%;
+  }
+  .newsletterHubspotFormContainer input[type=submit] {
+    font-size: 12px;
+    width: 100%;
+}
+}
+
+
+@media (max-width: 768px) {
+
+
+
+
+  .newsletterHubspotFormContainer .hs-firstname, .newsletterHubspotFormContainer .hs-lastname {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .newsletterHubspotFormContainer input[type=text],
+  .newsletterHubspotFormContainer input[type=email]{ 
+    width:220px;
+  }
+
+
+.newsletterHubspotFormContainer .hs-segmente select {
+    width:100%;
+  }
+  .newsletterHubspotFormContainer input[type=submit] {
+    font-size: 12px;
+    width: 100%;
+}
+
+
+
+}

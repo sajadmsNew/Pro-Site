@@ -1,0 +1,28 @@
+@import "../../../styles/variables";
+
+.formContainer {
+  max-width: 911px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.materialInformationWrapper {
+  max-width: 692px;
+  width: 100%;
+  padding-top: 200px;
+}
+
+@media (max-width: $mediaBreakdown) {
+  .formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .materialInformationWrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+}

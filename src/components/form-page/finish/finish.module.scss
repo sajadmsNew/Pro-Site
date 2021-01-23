@@ -1,0 +1,274 @@
+@import "../../../styles/variables";
+
+.hubspotForm form input[type="radio"] {
+  -webkit-appearance: initial;
+  background: white;
+  border-radius: 50%;
+  border: 3px solid rgba(55, 89, 240, 0.5);
+  outline: none;
+  cursor: pointer;
+}
+
+.hubspotForm form input[type="radio"]:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  margin-top: 4px;
+  border-radius: 50%;
+}
+.hubspotForm form input[type="radio"]:checked:before {
+  background: #f0a60e;
+}
+
+.hubspotForm form input[type="radio" i] {
+  width: 30px;
+  height: 30px;
+}
+
+.hubspotForm form .hs-button.primary,
+.hubspotForm form input[type="submit"],
+.hubspotForm form input[type="button"] {
+  margin: 0 auto;
+  display: block;
+  border: 0;
+  border-radius: 8px;
+  background-color: #3759f0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  padding: 12px 33px 12px 33px;
+}
+
+.hubspotForm form {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 23px;
+  position: relative;
+  width: 600px;
+  color: #373737;
+}
+
+.hubspotForm form p {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hubspotForm form ul {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 23px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 40px;
+  padding-inline-start: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hubspotForm form ul li {
+  width: 50px;
+}
+
+.hubspotForm form ul li label {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #14133a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  width: 144px;
+  height: 40px;
+  left: 24px;
+  top: 24px;
+}
+
+.innerContainer {
+  background-color: white;
+  border-top: 8px solid #f0a60e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 800px;
+}
+
+.title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 35px;
+  margin-top: 47px;
+  color: #373737;
+  text-align: center;
+}
+
+.text {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  margin: 0 auto 20px auto;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #373737;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.separator {
+  height: 4px;
+  background: rgba(55, 89, 240, 0.05);
+  width: 600px;
+}
+
+.hubspotForm form div:nth-child(2) div span,
+.hubspotForm form div:nth-child(3) div span {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(55, 55, 55, 0.5);
+  position: absolute;
+  top: 135px;
+}
+
+.hubspotForm form div:nth-child(2) div > span {
+  left: 20px;
+}
+
+.hubspotForm form div:nth-child(3) div > span {
+  left: 470px;
+}
+
+@media (max-width: $mediaBreakdown) {
+  .hubspotForm form {
+    width: 100%;
+  }
+
+  .hubspotForm form p {
+    width: 100%;
+  }
+  .hubspotForm form ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hubspotForm form ul li label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .innerContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: calc(100% - 60px);
+  }
+
+  .text {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .logo {
+    position: relative;
+    margin: 50px 0px 50px 30px;
+    top: 0;
+    left: 0;
+  }
+
+  .hubspotForm form .hs-button.primary,
+  .hubspotForm form input[type="submit"],
+  .hubspotForm form input[type="button"] {
+    max-width: 100%;
+    height: auto;
+    white-space: normal;
+  }
+
+  .hubspotForm form ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hubspotForm form ul li {
+    width: calc(100% / 5);
+  }
+
+  .hubspotForm form ul li label {
+    position: relative;
+  }
+
+  .hubspotForm form ul li label span {
+    position: absolute;
+  }
+
+  .hubspotForm form input[type="radio" i] {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+  }
+  .hubspotForm form input[type="radio"]:checked:before {
+    width: 48px;
+    height: 48px;
+    margin-top: -3px;
+    margin-left: -3px;
+  }
+  .hubspotForm form input[type="radio"]:checked span {
+    color: white;
+  }
+
+  .hubspotForm form div:nth-child(2) div > span,
+  .hubspotForm form div:nth-child(3) div > span {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+.pageWrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 1440px;
+  margin: 0 auto;
+  margin-bottom: calc(50vh - 10%);
+}
+
+@media (max-width: $mediaBreakdown) {
+  .pageWrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+}

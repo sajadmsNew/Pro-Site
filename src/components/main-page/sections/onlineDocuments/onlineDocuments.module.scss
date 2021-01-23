@@ -1,0 +1,49 @@
+@import "../../../../styles/variables";
+.onlineDocuments {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.textWrapper {
+  margin-left: 30px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: $tabletBreakdown) {
+  .textWrapper {
+    margin-right: 0;
+  }
+  .onlineDocuments {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: $phoneBreakdown) {
+  .onlineDocuments {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 62px;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .imageWrapper {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .textWrapper {
+    margin-left: 0;
+  }
+}

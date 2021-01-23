@@ -1,0 +1,48 @@
+@import "../../../styles/variables";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #f0a60e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: $mediaBreakdown) {
+  .separator {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .text {
+    font-size: 23px;
+  }
+}

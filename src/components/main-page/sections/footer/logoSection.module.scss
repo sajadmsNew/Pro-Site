@@ -1,0 +1,53 @@
+.darkBlue {
+  background: #0e0e2c;
+}
+
+.darkBlue .logoContainer {
+  height: 144px;
+  background: #0e0e2c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+
+@media (max-width: 1140px) and (min-width: 768px) {
+  .logoContainer {
+    width: 690px;
+  }
+
+  .darkBlue .logoContainer {
+    height: 80px;
+  }
+  .logoContainer img {
+    height: 48.48px;
+  }
+}
+@media (max-width: 768px) {
+  .logoWrapperGroup {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 95px;
+    width: 100%;
+  }
+
+  .logoContainer {
+    width: 320px;
+    height: 140px;
+  }
+
+  .logoContainer img {
+    height: 41px;
+  }
+
+  .logoWrapper {
+    height: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

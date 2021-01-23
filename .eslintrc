@@ -1,0 +1,27 @@
+{
+  "extends": "react-app",
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "indent": ["error", 2],
+    "no-class-assign": 0,
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "arrow-body-style": [2, "as-needed"],
+    "max-len": ["error", 150],
+    "import/extensions": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+    "react/self-closing-comp": ["error", { "component": true, "html": false }],
+    "react/no-danger": [0],
+    "jsx-a11y/no-static-element-interactions": 0,
+    "prefer-template": 0,
+    "react/forbid-prop-types": 0,
+    "no-prototype-builtins": 0
+  }
+}

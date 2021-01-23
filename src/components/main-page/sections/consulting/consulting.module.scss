@@ -1,0 +1,67 @@
+@import "../../../../styles/variables";
+.consulting {
+  background-color: $blue_6;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  margin-top: 96px;
+}
+
+.textWrapper {
+  margin-right: 111px;
+  padding-top: 33px;
+  margin-bottom: 13px;
+}
+
+.link {
+  color: blue;
+}
+
+@media (max-width: $tabletBreakdown) and (min-width: $phoneBreakdown) {
+  .consulting {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    margin-left: 0;
+    margin-top: 58px;
+  }
+
+  .sectionImage {
+    margin-top: 60px;
+  }
+
+  .textWrapper {
+    margin-right: 35px;
+    margin-left: 0;
+  }
+
+  .textWrapper p {
+    margin-bottom: 21px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $phoneBreakdown) {
+  .consulting {
+    margin: 0;
+    padding: 0 0 60px 0;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .textWrapper {
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .textWrapper span {
+    display: none;
+  }
+
+  .mobileTitle {
+    display: block;
+  }
+}

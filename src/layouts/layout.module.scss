@@ -1,0 +1,28 @@
+@import "../styles/variables";
+html {
+  font-family: lato;
+  font-style: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #f9f9fa;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: lato;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: $mediaBreakdown) {
+  .wrapper {
+    padding: 0;
+  }
+}

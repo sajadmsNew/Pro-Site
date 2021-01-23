@@ -1,0 +1,62 @@
+.awardsContainer {
+  height: 264px;
+  background: #14133a;
+}
+
+.awardContainerFirst {
+  padding-top: 40px;
+  width: 949px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 24px;
+}
+
+.awardContainerSecond {
+  width: 547px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (max-width: 1140px) and (min-width: 768px) {
+  .container {
+    width: 690px;
+    margin: 0 auto;
+  }
+
+  .awardsContainer {
+    height: 200px;
+  }
+  .awardsContainer img {
+    width: 110px;
+  }
+
+  .awardContainerFirst {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .awardContainerSecond {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 272px;
+    margin: 0 auto;
+  }
+  .awardsContainer img {
+    width: 124px;
+  }
+
+  .imagesContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .awardsContainer {
+    height: auto;
+  }
+}

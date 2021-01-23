@@ -1,0 +1,64 @@
+.footer {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.page {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.mobile {
+  display: none !important;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.desktop.tablet {
+  display: flex !important;
+  justify-content: center;
+}
+
+.desktop.mobile {
+  display: flex !important;
+  justify-content: center;
+}
+
+.mobile,
+.tablet {
+  display: none !important;
+}
+
+@media (max-width: 1140px) and (min-width: 768px) {
+  .desktop {
+    display: none !important;
+  }
+
+  .tablet.desktop,
+  .tablet {
+    display: flex !important;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop.tablet,
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile.desktop,
+  .mobile {
+    display: flex !important;
+    justify-content: center;
+  }
+}

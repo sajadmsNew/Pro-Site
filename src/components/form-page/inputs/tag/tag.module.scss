@@ -1,0 +1,67 @@
+@import "../../../../styles/variables";
+.tagsWrapper {
+  color: $blue_3;
+  max-width: 311px;
+  height: 58px;
+  background: rgba(55, 89, 240, 0.05);
+  border: 2px solid rgba(55, 89, 240, 0.5);
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 23px;
+}
+
+.active .tagsWrapper {
+  background-color: $blue_1;
+  color: white;
+  border-color: $blue_1;
+}
+
+.tagButton:hover {
+  cursor: pointer;
+}
+
+.tagsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tagButton {
+  width: fit-content;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 33px;
+  padding-right: 33px;
+  margin-bottom: 18px;
+  margin-right: 30px;
+  background: rgba(51, 126, 214, 0.05);
+  border: 2px solid rgba(51, 126, 214, 0.5);
+  color: $blue_3;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-size: 23px;
+}
+
+.active {
+  background: $blue_1;
+  color: white;
+  border-radius: 8px;
+}
+
+@media (max-width: $mediaBreakdown) {
+  .tagsWrapper {
+    width: 150px;
+    font-size: 16px;
+  }
+  .tagButton {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}

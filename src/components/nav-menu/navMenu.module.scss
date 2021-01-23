@@ -1,0 +1,317 @@
+@import "../../styles/variables";
+
+.navMenuMobile {
+  display: none;
+}
+
+.mobileMenuWrapper {
+  display: none;
+}
+
+.navMenu {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  justify-content: space-between;
+  display: flex;
+  max-width: 1140px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto;
+}
+
+.dropdownGroup {
+  display: flex;
+
+  height: 88px;
+}
+
+.logo {
+  width: 107px;
+  height: 40px;
+  margin-right: 40px;
+}
+.logoContainer:hover {
+  cursor: pointer;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkoutContainer {
+  display: flex;
+  align-items: center;
+}
+.accountContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 22px;
+}
+.dropdownLabelContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 26px;
+}
+
+.dropdownLabelContainer:hover {
+  cursor: pointer;
+}
+
+.dropdownLabelContainer span {
+  margin-right: 5px;
+}
+
+.expandMore {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.accountGroupContainer {
+  display: flex;
+
+  align-items: center;
+}
+.accountGroupContainer a:visited,
+.accountGroupContainer a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+}
+
+.accountLogos {
+  color: #666666;
+  margin-right: 6px;
+}
+
+.navDropdownContainer {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  z-index: 99;
+  position: absolute;
+  min-width: 232px;
+  top: 88px;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.navListItems {
+  max-height: 270px;
+  overflow-y: auto;
+}
+
+.navListItems a:last-child {
+  padding-bottom: 20px;
+}
+
+.navListItems a:first-child {
+  padding-top: 20px;
+}
+.navListItems a:visited,
+.navListItems a {
+  padding-top: 24px;
+  padding-bottom: 0;
+  padding-left: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  display: block;
+}
+
+.navMenuTriangleUpOutside {
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.15);
+}
+
+.navMenuTriangleUp {
+  left: -9px;
+  top: 1px;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #fff;
+}
+
+@media (max-width: $tabletBreakdown) {
+  .expanded {
+    background: #f1f1f3;
+
+    border-radius: 4px;
+  }
+  .navListItems a:last-child {
+    padding-bottom: 0;
+    margin-bottom: 15px;
+  }
+
+  .navMenu {
+    display: none;
+  }
+  .navMenuMobile {
+    position: fixed;
+    z-index: 5000;
+    background-color: #f0f2f4;
+    width: 100%;
+    top: 0;
+
+    display: flex;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .checkoutContainer {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .accountContainer:hover {
+    cursor: pointer;
+  }
+
+  .accountGroupContainer {
+    width: 59px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 18px;
+  }
+  .accountLogos {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .mobileMenuWrapper {
+    position: fixed;
+    top: 0;
+    padding-right: 15px;
+    width: 293px;
+    height: 100%;
+    background-color: white;
+    right: -15px;
+    z-index: 100;
+    display: inherit;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18), 0 2px 4px rgba(0, 0, 0, 0.24);
+  }
+
+  .navMobileContainer {
+    width: 100%;
+  }
+
+  .menuModalTitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  .modalHeader {
+    height: 56px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    justify-content: space-between;
+    padding-right: 21px;
+  }
+
+  .modalFooter a {
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  .modalFooter {
+    margin-top: 7px;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    padding-left: 16px;
+    padding-top: 24px;
+    padding-bottom: 70px;
+  }
+
+  .modalFooter a label {
+    font-weight: 500;
+  }
+
+  .dropdownLabelContainer {
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+  }
+
+  .dropdownLabelContainer span {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: rgba(0, 0, 0, 0.87);
+    font-style: normal;
+    font-weight: 500;
+  }
+  .expandMore {
+    color: rgba(0, 0, 0, 0.6);
+    padding-right: 16px;
+  }
+
+  .navMenuDropdownContainer {
+    padding: 14px;
+  }
+
+  .navDropdownContainer {
+    position: relative;
+    border: 0;
+    top: 0;
+    min-width: auto;
+  }
+
+  .navListItems {
+    max-height: fit-content;
+  }
+
+  .navListItems a {
+    padding-left: 48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 24px;
+    padding-top: 0;
+  }
+
+  .menuGroup {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .accountLogos {
+    margin-right: 14px;
+  }
+
+  .logoContainer {
+    padding-left: 15px;
+  }
+}

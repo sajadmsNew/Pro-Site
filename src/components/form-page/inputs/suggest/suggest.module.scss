@@ -1,0 +1,19 @@
+@import "../../../../styles/variables";
+
+.input {
+  text-align: left !important;
+  padding-left: 10px;
+}
+
+.label {
+  margin-bottom: 18px;
+  display: inline-block;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: bold;
+  color: #a4a4a4;
+}
+
+.label.active {
+  color: $blue_1;
+}

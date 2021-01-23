@@ -1,0 +1,110 @@
+@import "../../../../styles/variables";
+.selectDropdownContent input {
+  display: none;
+}
+.selectDropdown.longOptionSelected div:first-child span {
+  font-size: 20px;
+}
+
+.selectDropdown {
+  font-size: 23px;
+}
+
+.label {
+  margin-bottom: 18px;
+  display: inline-block;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: bold;
+  color: #a4a4a4;
+}
+
+.label.active {
+  color: $blue_1;
+}
+
+.react-dropdown-select-input::placeholder {
+  color: #c5c5c5;
+}
+.googleAutocomplete input {
+  background-color: red;
+}
+.error {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+  color: #ff6871;
+  display: block;
+}
+
+.selectDropdown input::placeholder {
+  color: #c5c5c5;
+  font-size: 23px;
+  font-family: "Lato";
+}
+
+.selectDropdown span {
+  padding-left: 30px;
+}
+
+.selectDropdown div[class*="select-content"] span {
+  padding-left: 0px;
+}
+
+.selectDropdown span[class*="disabled"] {
+  padding-left: 10px;
+}
+span[class*="disabled"] ins {
+  display: none;
+}
+
+.locationSearchInput {
+  width: 100%;
+  height: 58px;
+  background: #ffffff;
+  border: 2px solid #e5eef9;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-top: 8px;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (max-width: $mediaBreakdown) {
+  .selectDropdown.longOptionSelected div:first-child span {
+    font-size: 12px;
+  }
+
+  .label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .selectDropdown {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .selectDropdown span {
+    font-size: 16px;
+  }
+
+  .selectDropdown input {
+    margin: 0px;
+    width: 100%;
+    display: none;
+  }
+
+  .selectDropdown input::placeholder {
+    font-size: 14px;
+  }
+
+  .locationSearchInput {
+    font-size: 16px;
+  }
+}

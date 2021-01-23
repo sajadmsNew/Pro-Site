@@ -1,0 +1,74 @@
+pipeline:
+  production:
+    image: node
+    commands:
+      - npm install -g gatsby-cli@2.12.97 # change this in the future. This is because gatsby-cli@2.12.98 does not work
+      - npm install
+      - gatsby clean 
+      - GATSBY_API_URL=https://app.scrap24.com gatsby build  --prefix-paths
+    environment:
+      DRONE_ADMIN: vicente
+    when:
+      branch: release 
+
+  scp:
+    image: appleboy/drone-scp
+    host: 18.185.98.152
+    username: root
+    password: W((!`/jbZ2[8vd4Q
+    port: 22
+    target: /root/volumes/pro-form-deploy
+    source: ./public/*
+    when: 
+      branch: release
+
+  ssh:
+    image: appleboy/drone-ssh
+    host: 18.185.98.152
+    username: root
+    password: W((!`/jbZ2[8vd4Q
+    port: 22
+    script:
+      - rm -Rf /root/volumes/nginx/data/pro 
+      - mkdir -p /root/volumes/nginx/data/pro 
+      - cp -R /root/volumes/pro-form-deploy/public/* /root/volumes/nginx/data/pro 
+    when:
+      branch: release
+
+
+  qa: 
+    image: node
+    commands:
+      - npm install -g gatsby-cli@2.12.97 # change this in the future. This is because gatsby-cli@2.12.98 does not work
+      - npm install
+      - gatsby clean 
+      - GATSBY_API_URL=https://qa.scrap24.com gatsby build  --prefix-paths
+    environment:
+      DRONE_ADMIN: vicente
+    when:
+      branch: qa 
+
+  scp:
+    image: appleboy/drone-scp
+    host: 18.185.77.57
+    username: root
+    password: 'NVb{r/z9pU4W>XtM'
+    port: 22
+    target: /root/volumes/pro-form-deploy
+    source: ./public/*
+    when:
+      branch: qa
+
+  ssh:
+    image: appleboy/drone-ssh
+    host: 18.185.77.57
+    username: root
+    password: 'NVb{r/z9pU4W>XtM'
+    port: 22
+    script:
+      - rm -Rf /var/www/html/pro/
+      - mkdir -p /var/www/html/pro/
+      - cp -R /root/volumes/pro-form-deploy/public/* /var/www/html/pro/
+    when:
+      branch: qa
+

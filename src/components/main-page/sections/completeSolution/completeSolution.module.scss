@@ -1,0 +1,125 @@
+@import "../../../../styles/variables";
+.completeSolution {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 98px;
+}
+
+.listOfTextWrapper {
+  color: $blue_5;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer {
+  margin-left: 130px;
+  width: 458px;
+  margin-top: 95px;
+  margin-right: 92px;
+}
+
+.listOfTextWrapper img {
+  margin-right: 15px;
+}
+
+.listOfTextWrapper div {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: baseline;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+  hyphens: manual;
+}
+.listOfTextWrapper a {
+  margin-top: 15px;
+}
+.lightGrey {
+  color: rgba(0, 0, 0, 0.6);
+}
+.darkGrey {
+  color: rgba(0, 0, 0, 0.87);
+}
+.mobileTitles {
+  display: none;
+}
+@media (max-width: $tabletBreakdown) {
+  .completeSolutionImage {
+    width: 400px;
+  }
+  .textContainer {
+    width: 345px;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  .completeSolution {
+    padding-bottom: 60px;
+  }
+
+  .listOfTextWrapper div {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+
+  .textContainer img {
+    width: 15px;
+    margin-right: 10px;
+  }
+
+  .completeSolutionImage {
+    width: 345px;
+  }
+}
+@media (max-width: $phoneBreakdown) {
+  .completeSolutionImage {
+    max-width: 518px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  .listOfTextWrapper {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .listOfTextWrapper img {
+    width: 15px;
+    height: 11px;
+  }
+  .completeSolution {
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 70px;
+  }
+
+  .textContainer {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .completeSolutionImage {
+    max-width: 290px;
+  }
+  .mobileTitles {
+    display: block;
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .listOfTextWrapper a {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,37 @@
+@import "../../../../styles/variables";
+
+.link {
+  background-color: #3759f0;
+  height: 71px;
+  width: fit-content;
+
+  min-width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: $mediaBreakdown) {
+  .link {
+    min-width: 210px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+  }
+}

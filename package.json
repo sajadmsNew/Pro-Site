@@ -1,0 +1,79 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@material-ui/core": "^4.7.0",
+    "@material-ui/icons": "^4.5.1",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.4.1",
+    "gatsby": "^2.18.4",
+    "gatsby-image": "^2.2.34",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-google-tagmanager": "^2.10.0",
+    "gatsby-plugin-layout": "^1.1.21",
+    "gatsby-plugin-manifest": "^2.2.30",
+    "gatsby-plugin-offline": "^3.0.24",
+    "gatsby-plugin-page-transitions": "^1.0.8",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sass": "^2.1.24",
+    "gatsby-plugin-sharp": "^2.3.4",
+    "gatsby-plugin-smoothscroll": "^1.0.3",
+    "gatsby-source-filesystem": "^2.1.39",
+    "gatsby-transformer-sharp": "^2.3.6",
+    "i18next": "^19.0.3",
+    "i18next-browser-languagedetector": "^4.0.1",
+    "i18next-locize-backend": "^3.0.0",
+    "i18next-xhr-backend": "^3.2.2",
+    "locize-editor": "^3.0.0",
+    "lodash": "^4.17.15",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "node-sass": "^4.13.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-calendar": "^2.19.2",
+    "react-date-picker": "^7.9.0",
+    "react-dom": "^16.12.0",
+    "react-dropdown-select": "^3.8.1",
+    "react-dropzone": "^10.2.1",
+    "react-dropzone-uploader": "^2.11.0",
+    "react-helmet": "^5.2.1",
+    "react-i18next": "^8.3.8",
+    "react-native-calendars": "^1.214.0",
+    "react-phone-input-2": "^2.11.0",
+    "react-places-autocomplete": "^7.2.1",
+    "react-redux": "^7.1.3",
+    "react-spinkit": "^3.0.0",
+    "redux-thunk": "^2.3.0",
+    "scroll-to-element": "^2.0.3",
+    "smooth-scroll": "^16.1.0",
+    "superagent": "^5.1.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "vicente": "GATSBY_API_URL=http://d51vicente.schrott:3000 gatsby develop -H d51vicente.schrott -p 8000",
+    "javi": "GATSBY_API_URL=http://localhost:3000 gatsby develop -H jarstorm -p 8000",
+    "start": "GATSBY_API_URL=http://localhost:3000 npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

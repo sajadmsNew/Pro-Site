@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+.pageWrapper {
+  flex-grow: 1;
+  height: 100%;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: calc(50vh - 10%);
+}
+
+@media (max-width: $mediaBreakdown) {
+  .pageWrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .pageContainer {
+    width: calc(100%) !important;
+    margin: 0 !important;
+  }
+}

@@ -1,0 +1,112 @@
+@import "../../../../styles/variables";
+.tagWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.tagWrapper:hover {
+  cursor: pointer;
+}
+
+.sectionDescription {
+  font-size: 27px;
+  line-height: 35px;
+  color: #a4a4a4;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 25px;
+}
+
+div[class*="active"] .sectionDescription {
+  color: $blue_1;
+}
+
+.sectionContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transportInformation {
+  width: 100%;
+}
+
+.title {
+  font-size: 42px;
+  line-height: 50px;
+  color: $blue_1;
+  margin-top: 100px;
+}
+
+.inputWrapper {
+  width: 311px;
+}
+
+.addressInputGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.section {
+  margin-top: 130px;
+}
+
+.datePickUp_dropdownOption {
+  background: #ffffff;
+  border-left: 2px solid #e5eef9;
+  border-right: 2px solid #e5eef9;
+  border-bottom: 2px solid #e5eef9;
+  box-sizing: border-box;
+  width: 100%;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 28px;
+  color: $blue_2;
+}
+
+.datePickUp_dropdownWrapper:hover {
+  cursor: pointer;
+}
+
+.datePickUp_dropdownWrapper {
+  position: relative;
+}
+
+.datePickUp_dropdownWrapper img {
+  position: absolute;
+  top: 24px;
+  right: 14px;
+}
+
+.calendar {
+  width: 100% !important;
+  border: none !important;
+}
+.error {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+  color: #ff6871;
+  display: block;
+}
+@media (max-width: $mediaBreakdown) {
+  .title {
+    font-size: 28px;
+  }
+  .sectionDescription {
+    font-size: 18px;
+  }
+  .addressInputGroup {
+    flex-direction: column;
+  }
+  .inputWrapper {
+    width: 100%;
+  }
+}

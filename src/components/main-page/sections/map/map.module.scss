@@ -1,0 +1,63 @@
+@import "../../../../styles/variables";
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue_1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.textWrapper {
+  margin-right: 111px;
+  padding-top: 0;
+  height: 335px;
+  color: white;
+}
+
+.mapImage {
+  height: 685px;
+}
+
+.paragraphGroup {
+  width: 457px;
+  margin-bottom: 20px;
+}
+@media (max-width: $tabletBreakdown) {
+  .textWrapper {
+    margin-right: 30px;
+    margin-left: 0;
+  }
+  .map {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .mapImage {
+    height: auto;
+  }
+  .paragraphGroup {
+    width: 345px;
+  }
+}
+
+@media (max-width: $phoneBreakdown) {
+  .map {
+    flex-direction: column-reverse;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 60px;
+    padding-top: 0;
+    padding-bottom: 17px;
+  }
+  .mapImage {
+    margin-bottom: 13px;
+  }
+  .textWrapper {
+    margin: 0 auto;
+  }
+  .paragraphGroup {
+    width: 290px;
+    height: auto;
+  }
+}

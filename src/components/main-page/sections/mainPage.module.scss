@@ -1,0 +1,202 @@
+@import "../../../styles/variables";
+
+.smallTitle {
+  display: block;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.title {
+  display: block;
+  color: $blue_5;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  margin-bottom: 20px;
+}
+
+.title strong {
+  color: $orange;
+}
+
+.sectionText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: $blue_5;
+  width: 457px;
+}
+.sectionText p {
+  padding-bottom: 5px;
+}
+
+.whiteText {
+  color: white;
+}
+
+.orangeButtonLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  text-transform: uppercase;
+  width: fit-content;
+  height: 36px;
+  padding: 0 16px;
+  background: #f0a60e;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+}
+.link:visited,
+.link {
+  color: blue;
+  letter-spacing: 0.5px;
+}
+
+.textWrapper {
+  width: 555px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+.textWrapper p {
+  margin-bottom: 25px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.mobileTitle {
+  display: none;
+}
+
+.mobileTitleSmall {
+  display: none;
+}
+@media (max-width: $tabletBreakdown) {
+  .sectionText {
+    width: 345px;
+  }
+
+  .sectionText p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+
+  .textWrapper img {
+    width: 345px;
+  }
+
+  .textWrapper {
+    width: 345px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .textWrapper p {
+    margin-bottom: 21px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+
+  .smallTitle {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 16px;
+
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+  }
+
+  .title strong,
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .sectionText {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .sectionImage {
+    width: 345px;
+  }
+
+  .link {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+}
+
+@media (max-width: $phoneBreakdown) {
+  .smallTitle {
+    margin-top: 60px;
+  }
+  .mobileTitleSmall {
+    display: block;
+    text-align: left;
+    width: 290px;
+  }
+  .mobileTitle {
+    display: block;
+    text-align: left;
+    width: 290px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .sectionImage {
+    width: 290px;
+    margin-bottom: 15px;
+    margin-top: 32px;
+  }
+  .mobileWidth {
+    width: 290px;
+  }
+
+  .textWrapper {
+    margin: 0;
+    width: 290px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+
+  .hidePhone {
+    display: none;
+  }
+
+  .sectionText {
+    width: 290px;
+  }
+  .link {
+    font-weight: 400;
+  }
+}

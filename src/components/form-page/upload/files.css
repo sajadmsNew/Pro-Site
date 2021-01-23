@@ -1,0 +1,30 @@
+.dzu-previewContainer {
+  display: none !important;
+}
+.dzu-submitButtonContainer {
+  display: none;
+}
+
+.dzu-inputLabelWithFiles {
+  opacity: 0;
+  color: transparent;
+}
+
+.dzu-inputLabel {
+  position: relative;
+  color: transparent;
+}
+
+.dzu-input {
+  position: absolute;
+  top: -88px;
+  left: -225px;
+  width: 648px;
+  height: 200px;
+  opacity: 0;
+  max-width: 100%;
+}
+
+.dzu-input:hover {
+  cursor: pointer;
+}

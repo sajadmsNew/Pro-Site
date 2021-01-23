@@ -1,0 +1,25 @@
+@import "../../../../styles/variables";
+.textarea {
+  width: 100%;
+  resize: none;
+  height: 174px;
+  background: #ffffff;
+  border: 2px solid #e5eef9;
+  box-sizing: border-box;
+  padding: 25px;
+  font-size: 23px;
+  line-height: 28px;
+  color: $blue_2;
+  font-family: "Lato";
+}
+
+.textarea::placeholder {
+  font-family: "lato";
+  color: #c5c5c5;
+}
+
+@media (max-width: $mediaBreakdown) {
+  .textarea {
+    font-size: 16px;
+  }
+}
