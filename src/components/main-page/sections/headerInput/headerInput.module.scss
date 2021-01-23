@@ -170,16 +170,37 @@
 }
 
 .inputGroup label {
+  // position: absolute;
+  // top: 25px;
+  // right: 20px;
+  // font-family: Montserrat;
+  // font-style: normal;
+  // font-weight: normal;
+  // font-size: 22px;
+  // line-height: 27px;
+  // text-align: center;
+  // color: #14133a;
   position: absolute;
-  top: 25px;
-  right: 20px;
-  font-family: Montserrat;
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 27px;
-  text-align: center;
-  color: #14133a;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: left;
+  padding: 0 12px;
+  bottom: 70px;
+  left: 30px;
+  color: rgba(0, 0, 0, 0.6);
+  transform: translate(0, 26px) scale(1);
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+}
+.inputGroup:focus-within label {
+  transform: translate(0, 12px) scale(0.7);
+}
+.active {
+  transform: translate(0, 12px) scale(0.75) !important;
 }
 
 .inputGroup span {

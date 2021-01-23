@@ -69,6 +69,12 @@ class HeaderInput extends React.Component {
     } else {
       this.setState({ weight: null, error: "Enter the quantity to proceed" });
     }
+    //new
+    if (value !== "") {
+      this.setState({ weightInputActive: true });
+    } else {
+      this.setState({ weightInputActive: false });
+    }
   }
 
   redirect = () => {
@@ -158,10 +164,15 @@ class HeaderInput extends React.Component {
               </div>
               <div className={styles.inputGroup}>
                 <input
-                  placeholder={t("Weight")}
+                  // placeholder={t("Weight")}
                   className={styles.amountInput + " data-hj-whitelist"}
                   onKeyUp={value => this.onChangeKilos(value)}
                 />
+                <label
+                  className={this.state.weightInputActive ? styles.active : ""}
+                >
+                  {t("Weight")}
+                </label>
 
                 {this.state.error ? (
                   <span className={styles.errorExplanation}>
