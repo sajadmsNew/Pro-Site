@@ -168,10 +168,14 @@ class HeaderInput extends React.Component {
                   className={styles.amountInput + " data-hj-whitelist"}
                   onKeyUp={value => this.onChangeKilos(value)}
                 />
+
                 <label
                   className={this.state.weightInputActive ? styles.active : ""}
                 >
                   {t("Weight")}
+                  <div id={styles.weightUnit}>
+                    {this.state.weightInputActive ? " (t)" : ""}
+                  </div>
                 </label>
 
                 {this.state.error ? (
