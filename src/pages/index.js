@@ -31,7 +31,6 @@ class IndexPage extends React.Component {
 
   componentDidMount() {
     this.props.loadInitialInfo();
-    this.setState({ homeAddress: `${location.href}pro` });
   }
 
   setElementsLoad(val) {
@@ -55,8 +54,7 @@ class IndexPage extends React.Component {
         <NavMenu />
 
         <div className={styles.breadcrumb}>
-          {/* <a href="https://www.schrott24.at/pro">Home</a>{" "} */}
-          <a href={this.state.homeAddress}>Home</a>{" "}
+          <a href="https://www.schrott24.at/">Home</a>{" "}
           <span className={styles.separator}>/</span>
           <span> Pro</span>
         </div>
