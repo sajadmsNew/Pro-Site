@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "title title  image image";
-  width: 520px;
+  // width: 520px;
   height: 216px;
   left: 390px;
   top: 168px;
@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "title title  image image";
-  width: 520px;
+  // width: 520px;
   height: 216px;
   left: 390px;
   top: 168px;
@@ -234,6 +234,9 @@
 
     letter-spacing: 0.15px;
   }
+  .formImg {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 768px) {
@@ -262,7 +265,7 @@
     width: 320px;
   }
   .newsletterContainer {
-    height: 1900px;
+    height: 1800px;
     display: flex;
     justify-content: center;
   }
@@ -288,5 +291,8 @@
 
   .diagonalBlueLine {
     height: 93px;
+  }
+  .formImg {
+    visibility: hidden;
   }
 }
