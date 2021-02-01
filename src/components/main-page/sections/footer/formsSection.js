@@ -3,6 +3,9 @@ import { withNamespaces } from "react-i18next";
 import footerStyles from "./footer.module.scss";
 import styles from "./formsSection.module.scss";
 import "./hubspot.css";
+import footerImgYellow from "../../../../images/pricealarm_mock-up_3.svg";
+import footerImgBlue from "../../../../images/marktupdate_mock-up_1.svg";
+
 class AwardSection extends React.Component {
   componentDidMount() {
     const script = document.createElement("script");
@@ -35,14 +38,21 @@ class AwardSection extends React.Component {
           <div className={styles.newsletterOuter}>
             <div className={styles.newslettersWrapper}>
               <div className={styles.preisalarmContainer}>
-                <img src="https://img.scrap24.com/resize?width=520&height=200&url=https://schrott24web.s3.eu-central-1.amazonaws.com/common/footer_preisalarm.png" />
+                <div className={styles.headerLeft}>
+                  <div className={styles.formTitle}>
+                    <div className={styles.preisalarmContainerTitleLeft}>
+                      Preisalarm – keine Schrottpreise vom Shop verpassen!
+                    </div>
+                    <div className={styles.paragraphLeft}>
+                      Wöchentlich die Schrott24 Kilopreise direkt in die Inbox!
+                    </div>
+                  </div>
+                  <div className={styles.formImg}>
+                    <img src={footerImgYellow} />
+                  </div>
+                </div>
+
                 <div className={styles.cardContainer}>
-                  <span className={styles.preisalarmContainerTitle}>
-                    Preisalarm - Keine Schrottpreise verpassen!
-                  </span>
-                  <p>
-                    Wöchentlich die aktuellen Schrott24 Kilopreise per Mail.
-                  </p>
                   <div
                     id="preisalarmForm"
                     class="newsletterHubspotFormContainer"
@@ -56,15 +66,21 @@ class AwardSection extends React.Component {
                   styles.marktupdateContainer,
                 ].join(" ")}
               >
-                <img src="https://img.scrap24.com/resize?width=520&height=200&url=https://schrott24web.s3.eu-central-1.amazonaws.com/common/footer_marketupdate.png" />
+                <div className={styles.headerRight}>
+                  <div className={styles.formTitle}>
+                    <div className={styles.preisalarmContainerTitleRight}>
+                      Industriepreis- Entwicklungen
+                    </div>
+                    <div className={styles.paragraphRight}>
+                      Monatlich neutralen Überblick über die Entwicklungen der
+                      Altmetalle und Börse erhalten.
+                    </div>
+                  </div>
+                  <div className={styles.formImg}>
+                    <img src={footerImgBlue} />
+                  </div>
+                </div>
                 <div className={styles.cardContainer}>
-                  <span className={styles.preisalarmContainerTitle}>
-                    Schrottpreisindex für Industrie
-                  </span>
-                  <p>
-                    Monatlich ein neutraler Überblick auf die Preisentwicklungen
-                    der Altmetalle per Mail erhalten.
-                  </p>
                   <div
                     id="marketupdateForm"
                     className={styles.newsletterHubspotFormContainer}
