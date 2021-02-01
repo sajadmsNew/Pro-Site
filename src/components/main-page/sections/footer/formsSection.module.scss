@@ -3,7 +3,35 @@
   height: 848px;
   position: relative;
 }
-
+.headerLeft {
+  // position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title  image image";
+  width: 520px;
+  height: 216px;
+  left: 390px;
+  top: 168px;
+  background: #f0a60e;
+}
+.headerRight {
+  // position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title  image image";
+  width: 520px;
+  height: 216px;
+  left: 390px;
+  top: 168px;
+  background: #14133a;
+}
+.formTitle {
+  grid-area: title;
+  // position: absolute;
+}
+.formImg {
+  grid-area: image;
+}
 .newsletterOuter {
   width: 100%;
   display: flex;
@@ -20,10 +48,16 @@
 }
 
 .preisalarmContainer {
+  // position: absolute;
   width: 520px;
   height: auto;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  left: 1010px;
+  top: 168px;
+
+  background: #ffffff;
+  /* Card Shadow */
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
   z-index: 9;
 }
 
@@ -31,26 +65,81 @@
   padding-top: 36px;
   padding-left: 36px;
   padding-right: 36px;
+  // padding: 36px;
 }
 
-.preisalarmContainerTitle {
+.preisalarmContainerTitleLeft {
+  display: block;
+  width: 256px;
+  height: 84px;
+  left: 426px;
+  top: 208px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+
   color: rgba(0, 0, 0, 0.87);
+  padding-left: 36px;
+  padding-top: 40px;
+  padding-bottom: 12px;
+}
+.preisalarmContainerTitleRight {
   display: block;
-  padding-bottom: 16px;
+  width: 256px;
+  height: 84px;
+  left: 426px;
+  top: 208px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
+  padding-left: 36px;
+  padding-top: 40px;
+  padding-bottom: 12px;
+}
+.paragraphLeft {
+  width: 256px;
+  height: 48px;
+  left: 426px;
+  top: 304px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.87);
+  padding-left: 36px;
+}
+.paragraphRight {
+  width: 256px;
+  height: 48px;
+  left: 426px;
+  top: 304px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  padding-left: 36px;
 }
 
-.preisalarmContainer {
-  width: 520px;
-  height: auto;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
-  z-index: 9;
-}
+// .preisalarmContainer {
+//   width: 520px;
+//   height: auto;
+//   background: #fff;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+//   z-index: 9;
+// }
 
 .blueLineWrapper {
   position: absolute;
