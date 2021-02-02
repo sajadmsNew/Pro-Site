@@ -21,6 +21,29 @@
 .materialSelectContainer {
   width: 320px;
 }
+.materialSelectContainer label {
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: left;
+  padding: 0 12px;
+  bottom: 120px;
+  left: 30px;
+  color: rgba(0, 0, 0, 0.6);
+  transform: translate(0, 26px) scale(1);
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+}
+.materialSelectContainer:focus-within label {
+  transform: translate(0, 12px) scale(0.7);
+}
+.active {
+  transform: translate(0, 12px) scale(0.75) !important;
+}
 
 .header {
   margin-bottom: 0;

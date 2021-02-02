@@ -8,6 +8,7 @@ import headerImg from "../../../../images/crane_header.png";
 import Select from "react-dropdown-select";
 import { navigate } from "gatsby";
 import _ from "lodash";
+import { options } from "./options";
 import {
   MATERIAL_STEPS_NUMBER,
   TRANSPORT_STEPS_NUMBER,
@@ -40,7 +41,24 @@ class HeaderInput extends React.Component {
       error: null,
     };
   }
+  ////////////////////////////test/////////
 
+  options = () =>
+    options.map(user => ({
+      label: user.username,
+      value: user.email,
+    }));
+
+  customItemRenderer = ({ item, itemIndex, props, state, methods }) => (
+    <StyledItem>
+      <div onClick={() => methods.addItem(item)}>
+        <input type="checkbox" checked={methods.isSelected(item)} />{" "}
+        {item.label}
+      </div>
+    </StyledItem>
+  );
+
+  ///////////////////test///////////
   static getDerivedStateFromProps(props, state) {
     if (props.loadedFromToken) {
       const numberOfElementsLoaded =
@@ -56,10 +74,15 @@ class HeaderInput extends React.Component {
 
   onChange = value => {
     let material = "";
+    console.log("beforeif");
     if (value.length) {
-      material = value[0].materialId;
+      console.log("inside if");
+      // material = value[0].materialId;
+      //////////////////////////////test
+      material = "test";
     }
     this.setState({ material });
+    console.log(this.state.material);
   };
 
   onChangeKilos(event) {
@@ -153,14 +176,23 @@ class HeaderInput extends React.Component {
               <div className={styles.materialSelectContainer}>
                 <Select
                   style={this.style}
-                  placeholder={t("Material") + "  "}
+                  // placeholder={t("Material") + "  "}
+                  placeholder={""}
                   searchable={true}
-                  clearable={false}
-                  options={products}
+                  clearable={this.state.material ? true : false}
+                  // options={products}
                   onChange={value => this.onChange(value)}
                   className={styles.selectDropdown + " data-hj-whitelist"}
-                  searchBy={"label"}
+                  // searchBy={"label"}
+                  ////////////////////////////////test////
+                  options={this.options()}
+                  searchBy={"username"}
+                  // onDropdownOpen={}
+                  // onDropdownClose={}
                 />
+                <label className={this.state.material ? styles.active : ""}>
+                  {t("Material") + "  "}
+                </label>
               </div>
               <div className={styles.inputGroup}>
                 <input
