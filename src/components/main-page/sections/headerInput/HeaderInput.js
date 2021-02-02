@@ -146,9 +146,7 @@ class HeaderInput extends React.Component {
             <div className={styles.headerMobileImg}>
               <img src={headerImg} alt="crane" />
             </div>
-            <span className={styles.formTitle}>
-              {t("Was wollen Sie verkaufen?")}
-            </span>
+            <span id={styles.formTitle}>{t("Was wollen Sie verkaufen?")}</span>
             <div className={styles.inputContainer}>
               <div className={styles.materialSelectContainer}>
                 <Select
