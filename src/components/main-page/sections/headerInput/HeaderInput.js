@@ -8,7 +8,6 @@ import headerImg from "../../../../images/crane_header.png";
 import Select from "react-dropdown-select";
 import { navigate } from "gatsby";
 import _ from "lodash";
-import { options } from "./options";
 import {
   MATERIAL_STEPS_NUMBER,
   TRANSPORT_STEPS_NUMBER,
@@ -41,24 +40,6 @@ class HeaderInput extends React.Component {
       error: null,
     };
   }
-  ////////////////////////////test/////////
-
-  options = () =>
-    options.map(user => ({
-      label: user.username,
-      value: user.email,
-    }));
-
-  customItemRenderer = ({ item, itemIndex, props, state, methods }) => (
-    <StyledItem>
-      <div onClick={() => methods.addItem(item)}>
-        <input type="checkbox" checked={methods.isSelected(item)} />{" "}
-        {item.label}
-      </div>
-    </StyledItem>
-  );
-
-  ///////////////////end test///////////
   static getDerivedStateFromProps(props, state) {
     if (props.loadedFromToken) {
       const numberOfElementsLoaded =
@@ -75,10 +56,7 @@ class HeaderInput extends React.Component {
   onChange = value => {
     let material = "";
     if (value.length) {
-      // material = value[0].materialId;
-      //////////////////////////////test
-      console.log(value[0].label);
-      material = value[0].label;
+      material = value[0].materialId;
     }
     this.setState({ material });
     console.log(this.state.material);
@@ -179,15 +157,10 @@ class HeaderInput extends React.Component {
                   placeholder={""}
                   searchable={true}
                   clearable={this.state.material ? true : false}
-                  // options={products}
+                  options={products}
                   onChange={value => this.onChange(value)}
                   className={styles.selectDropdown + " data-hj-whitelist"}
-                  // searchBy={"label"}
-                  ////////////////////////////////test////
-                  options={this.options()}
-                  searchBy={"username"}
-                  // onDropdownOpen={}
-                  // onDropdownClose={}
+                  searchBy={"label"}
                 />
                 <label className={this.state.material ? styles.active : ""}>
                   {t("Material") + "  "}
