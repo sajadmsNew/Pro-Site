@@ -49,10 +49,19 @@ class NavMenuDropdown extends React.Component {
         onMouseEnter={() => this.open()}
         onMouseLeave={() => this.close()}
       >
-        <span>{this.props.dropdownLabel}</span>
         {this.props.linkList ? (
-          <ExpandMore className={styles.expandMore} />
-        ) : null}
+          <React.Fragment>
+            <span>{this.props.dropdownLabel}</span>
+            <ExpandMore className={styles.expandMore} />
+          </React.Fragment>
+        ) : (
+          <a
+            href={`/${this.props.dropdownLabel}`}
+            style={{ color: "rgba(0, 0, 0, 0.87)" }}
+          >
+            {this.props.dropdownLabel}
+          </a>
+        )}
         {this.navDropdownContainerRenderer()}
       </div>
     );
