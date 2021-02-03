@@ -30,19 +30,19 @@
   line-height: 24px;
   text-transform: capitalize;
   text-align: left;
-  padding: 0 12px;
-  bottom: 120px;
-  left: 30px;
+  padding-left: 12px;
+  bottom: 130px;
+  // left: 35px;
   color: rgba(0, 0, 0, 0.6);
   transform: translate(0, 26px) scale(1);
   transform-origin: top left;
   transition: all 0.2s ease-out;
 }
 .materialSelectContainer:focus-within label {
-  transform: translate(0, 12px) scale(0.7);
+  transform: translate(3px, 12px) scale(0.7);
 }
 .active {
-  transform: translate(0, 12px) scale(0.75) !important;
+  transform: translate(3px, 12px) scale(0.75) !important;
 }
 
 .header {
@@ -399,6 +399,29 @@
   .selectDropdown {
     margin-bottom: 18px;
   }
+  .materialSelectContainer label {
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    text-align: left;
+    padding-left: 12px;
+    bottom: 190px;
+    // left: 19px ;
+    color: rgba(0, 0, 0, 0.6);
+    transform: translate(0, 26px) scale(1);
+    transform-origin: top left;
+    transition: all 0.2s ease-out;
+  }
+  .materialSelectContainer:focus-within label {
+    transform: translate(1px, 1px) scale(0.7);
+  }
+  .active {
+    transform: translate(1px, 1px) scale(0.75) !important;
+  }
 }
 
 @media (max-width: $phoneBreakdown) {
@@ -466,5 +489,53 @@
 
   .submitButton {
     margin-left: -203px;
+  }
+  .materialSelectContainer label {
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    text-align: left;
+    padding-left: 12px;
+    // bottom: 170px;
+    // left: 240px;
+    color: rgba(0, 0, 0, 0.6);
+    transform: translate(0, 26px) scale(1);
+    transform-origin: top left;
+    transition: all 0.2s ease-out;
+  }
+  .materialSelectContainer:focus-within label {
+    transform: translate(1px, 1px) scale(0.7);
+  }
+  .active {
+    transform: translate(1px, 1px) scale(0.7) !important;
+  }
+}
+@media (max-width: 768px) {
+  .materialSelectContainer label {
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    text-align: left;
+    padding-left: 12px;
+    bottom: 170px;
+    // left: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    transform: translate(0, 26px) scale(1);
+    transform-origin: top left;
+    transition: all 0.2s ease-out;
+  }
+  .materialSelectContainer:focus-within label {
+    transform: translate(1px, 1px) scale(0.7);
+  }
+  .active {
+    transform: translate(1px, 1px) scale(0.7) !important;
   }
 }

@@ -23,7 +23,7 @@ class HeaderInput extends React.Component {
     width: "100%",
     height: "76px",
     background: "#FFFFFF",
-
+    "padding-left": "10px",
     fontFamily: "Roboto",
     fontStyle: "normal",
     fontWeight: "normal",
