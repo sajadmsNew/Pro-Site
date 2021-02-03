@@ -22,6 +22,24 @@ class NavMenuDropdown extends React.Component {
   open() {
     this.setState({ dropdownOpen: true });
   }
+  navDropdownContainerRenderer = () => {
+    if (this.props.linkList) {
+      return this.state.dropdownOpen ? (
+        <div className={styles.navDropdownContainer}>
+          <div className={styles.navMenuTriangleUpOutside}>
+            <div className={styles.navMenuTriangleUp}></div>
+          </div>
+          <div className={styles.navListItems}>
+            {this.props.linkList.map(element => (
+              <a href={element.url}>{element.label}</a>
+            ))}
+          </div>
+        </div>
+      ) : null;
+    } else {
+      return null;
+    }
+  };
   render() {
     const { t } = this.props;
 
@@ -32,20 +50,10 @@ class NavMenuDropdown extends React.Component {
         onMouseLeave={() => this.close()}
       >
         <span>{this.props.dropdownLabel}</span>
-        <ExpandMore className={styles.expandMore} />
-
-        {this.state.dropdownOpen ? (
-          <div className={styles.navDropdownContainer}>
-            <div className={styles.navMenuTriangleUpOutside}>
-              <div className={styles.navMenuTriangleUp}></div>
-            </div>
-            <div className={styles.navListItems}>
-              {this.props.linkList.map(element => (
-                <a href={element.url}>{element.label}</a>
-              ))}
-            </div>
-          </div>
+        {this.props.linkList ? (
+          <ExpandMore className={styles.expandMore} />
         ) : null}
+        {this.navDropdownContainerRenderer()}
       </div>
     );
   }

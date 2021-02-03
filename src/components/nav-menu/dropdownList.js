@@ -21,7 +21,7 @@ class NavMenuDropdownList extends React.Component {
     const { t } = this.props;
     return (
       <>
-        <Dropdown
+        {/* <Dropdown
           openKey={this.state.openKey}
           updateKey={this.updateKey}
           view={this.props.view}
@@ -85,7 +85,7 @@ class NavMenuDropdownList extends React.Component {
               label: "Zinn",
             },
           ]}
-        />
+        /> */}
 
         <Dropdown
           openKey={this.state.openKey}
@@ -106,7 +106,6 @@ class NavMenuDropdownList extends React.Component {
             },
           ]}
         />
-
         <Dropdown
           openKey={this.state.openKey}
           updateKey={this.updateKey}
@@ -131,7 +130,7 @@ class NavMenuDropdownList extends React.Component {
           ]}
         />
 
-        <Dropdown
+        {/* <Dropdown
           openKey={this.state.openKey}
           updateKey={this.updateKey}
           view={this.props.view}
@@ -167,6 +166,15 @@ class NavMenuDropdownList extends React.Component {
               label: "Kontaktformular",
             },
           ]}
+        /> */}
+
+        <Dropdown
+          openKey={this.state.openKey}
+          updateKey={this.updateKey}
+          view={this.props.view}
+          key={"Marktdaten"}
+          element={"Marktdaten"}
+          dropdownLabel={"Marktdaten"}
         />
 
         <Dropdown
