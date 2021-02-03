@@ -94,17 +94,6 @@ class NavMenuDropdownList extends React.Component {
           key={"verkaufen"}
           element={"verkaufen"}
           dropdownLabel={"Verkaufen"}
-          linkList={[
-            {
-              url: "/pro/",
-              label: "Altmetallpreis anfragen",
-            },
-
-            {
-              url: "/altmetall-ankauf/",
-              label: "Kleine Mengen verkaufen",
-            },
-          ]}
         />
         <Dropdown
           openKey={this.state.openKey}
@@ -113,21 +102,6 @@ class NavMenuDropdownList extends React.Component {
           key={"kaufen"}
           element={"kaufen"}
           dropdownLabel={"Kaufen"}
-          linkList={[
-            {
-              url: "/altmetall-kaufen/",
-              label: "Altmetall kaufen",
-            },
-
-            {
-              url: "/partner/",
-              label: "Schrott24 Partner werden",
-            },
-            {
-              url: "/partnerwebshop/",
-              label: "Ihr Webshop",
-            },
-          ]}
         />
 
         {/* <Dropdown
@@ -175,6 +149,12 @@ class NavMenuDropdownList extends React.Component {
           key={"Marktdaten"}
           element={"Marktdaten"}
           dropdownLabel={"Marktdaten"}
+          linkList={[
+            {
+              url: "/item/",
+              label: "item",
+            },
+          ]}
         />
 
         <Dropdown
@@ -184,30 +164,6 @@ class NavMenuDropdownList extends React.Component {
           key={"uber-uns"}
           element={"uber-uns"}
           dropdownLabel={"Über uns"}
-          linkList={[
-            {
-              url: "/support/",
-              label: "So funktioniert's",
-            },
-
-            {
-              url: "/standorte/",
-              label: "Standorte",
-            },
-            {
-              url: "/presse/",
-              label: "Presse",
-            },
-
-            {
-              url: "/blog/",
-              label: "Blog ",
-            },
-            {
-              url: "/ueber-uns/",
-              label: "Über uns",
-            },
-          ]}
         />
       </>
     );
