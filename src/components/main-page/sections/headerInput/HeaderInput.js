@@ -23,7 +23,7 @@ class HeaderInput extends React.Component {
     width: "100%",
     height: "76px",
     background: "#FFFFFF",
-    "padding-left": "10px",
+    "padding-left": "9px",
     fontFamily: "Roboto",
     fontStyle: "normal",
     fontWeight: "normal",
@@ -58,7 +58,7 @@ class HeaderInput extends React.Component {
     </StyledItem>
   );
 
-  ///////////////////test///////////
+  ///////////////////end test///////////
   static getDerivedStateFromProps(props, state) {
     if (props.loadedFromToken) {
       const numberOfElementsLoaded =
@@ -74,12 +74,11 @@ class HeaderInput extends React.Component {
 
   onChange = value => {
     let material = "";
-    console.log("beforeif");
     if (value.length) {
-      console.log("inside if");
       // material = value[0].materialId;
       //////////////////////////////test
-      material = "test";
+      console.log(value[0].label);
+      material = value[0].label;
     }
     this.setState({ material });
     console.log(this.state.material);
