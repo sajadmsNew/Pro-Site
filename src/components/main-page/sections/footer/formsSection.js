@@ -45,7 +45,7 @@ class AwardSection extends React.Component {
                   </p>
                   <div
                     id="preisalarmForm"
-                    class="newsletterHubspotFormContainer"
+                    className="newsletterHubspotFormContainer"
                     className={styles.newsletterHubspotFormContainer}
                   ></div>
                 </div>
@@ -68,7 +68,7 @@ class AwardSection extends React.Component {
                   <div
                     id="marketupdateForm"
                     className={styles.newsletterHubspotFormContainer}
-                    class="newsletterHubspotFormContainer"
+                    className="newsletterHubspotFormContainer"
                   ></div>
                 </div>
               </div>
