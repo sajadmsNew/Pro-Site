@@ -3,7 +3,7 @@ import { withNamespaces } from "react-i18next";
 import styles from "./map.module.scss";
 import common_styles from "../mainPage.module.scss";
 import BlueButton from "../../../../components/main-page/inputs/buttons/blueButton";
-import map from "../../../../images/map.png";
+import map from "../../../../images/mapNew.svg";
 import { Link } from "gatsby";
 class Map extends React.Component {
   render() {
@@ -56,7 +56,7 @@ class Map extends React.Component {
           <img
             src={map}
             className={[styles.mapImage, common_styles.sectionImage].join(" ")}
-            alt="Austrian and Germany map"
+            alt="global world map"
           />
         </div>
 
