@@ -2,21 +2,30 @@
 .map {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: $blue_1;
-  padding-top: 100px;
+  // padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .textWrapper {
-  margin-right: 111px;
+  margin-right: 25px;
   padding-top: 0;
   height: 335px;
   color: white;
+  padding-left: 150px;
 }
-
+.imageWrapper {
+  overflow: hidden;
+  padding-right: 320px;
+}
 .mapImage {
-  height: 685px;
+  //  : 685px;
+  // position: absolute;
+  // width: 1043px;
+  // height: 700px;
+  // left: 877px;
+  // top: 0px;
 }
 
 .paragraphGroup {
@@ -27,14 +36,20 @@
   .textWrapper {
     margin-right: 30px;
     margin-left: 0;
+    padding-left: 150px;
   }
   .map {
-    padding-top: 45px;
+    // padding-top: 45px;
     padding-bottom: 45px;
+    justify-content: flex-end;
   }
-
+  .imageWrapper {
+    overflow: hidden;
+    padding-right: 0px;
+  }
   .mapImage {
-    height: auto;
+    height: 375px;
+    width: 725px;
   }
   .paragraphGroup {
     width: 345px;
@@ -52,9 +67,12 @@
   }
   .mapImage {
     margin-bottom: 13px;
+    width: 290px;
+    height: 205px;
   }
   .textWrapper {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
   }
   .paragraphGroup {
     width: 290px;
