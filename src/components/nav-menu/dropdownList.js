@@ -21,7 +21,7 @@ class NavMenuDropdownList extends React.Component {
     const { t } = this.props;
     return (
       <>
-        <Dropdown
+        {/* <Dropdown
           openKey={this.state.openKey}
           updateKey={this.updateKey}
           view={this.props.view}
@@ -85,7 +85,7 @@ class NavMenuDropdownList extends React.Component {
               label: "Zinn",
             },
           ]}
-        />
+        /> */}
 
         <Dropdown
           openKey={this.state.openKey}
@@ -94,19 +94,7 @@ class NavMenuDropdownList extends React.Component {
           key={"verkaufen"}
           element={"verkaufen"}
           dropdownLabel={"Verkaufen"}
-          linkList={[
-            {
-              url: "/pro/",
-              label: "Altmetallpreis anfragen",
-            },
-
-            {
-              url: "/altmetall-ankauf/",
-              label: "Kleine Mengen verkaufen",
-            },
-          ]}
         />
-
         <Dropdown
           openKey={this.state.openKey}
           updateKey={this.updateKey}
@@ -114,24 +102,9 @@ class NavMenuDropdownList extends React.Component {
           key={"kaufen"}
           element={"kaufen"}
           dropdownLabel={"Kaufen"}
-          linkList={[
-            {
-              url: "/altmetall-kaufen/",
-              label: "Altmetall kaufen",
-            },
-
-            {
-              url: "/partner/",
-              label: "Schrott24 Partner werden",
-            },
-            {
-              url: "/partnerwebshop/",
-              label: "Ihr Webshop",
-            },
-          ]}
         />
 
-        <Dropdown
+        {/* <Dropdown
           openKey={this.state.openKey}
           updateKey={this.updateKey}
           view={this.props.view}
@@ -167,6 +140,72 @@ class NavMenuDropdownList extends React.Component {
               label: "Kontaktformular",
             },
           ]}
+        /> */}
+
+        <Dropdown
+          openKey={this.state.openKey}
+          updateKey={this.updateKey}
+          view={this.props.view}
+          key={"Marktdaten"}
+          element={"Marktdaten"}
+          dropdownLabel={"Marktdaten"}
+          linkList={[
+            {
+              url: "/schrottpreise ",
+              label: "Schrottpreise",
+            },
+
+            {
+              url: "/aluminiumpreis/",
+              label: "Aluminiumpreis",
+            },
+            {
+              url: "/bleipreise/",
+              label: "Bleipreis",
+            },
+
+            {
+              url: "/edelstahlpreis/",
+              label: "Edelstahlpreis",
+            },
+            {
+              url: "/eisenpreise/",
+              label: "Eisenpreis",
+            },
+            {
+              url: "/stahlpreise/",
+              label: "Stahlpreis",
+            },
+            {
+              url: "/elektroschrottpreise/",
+              label: "Elektroschrottpreis",
+            },
+
+            {
+              url: "/hartmetallpreis/",
+              label: "Hartmetallpreis",
+            },
+            {
+              url: "/kabelpreise/",
+              label: "Kabelpreis",
+            },
+            {
+              url: "/kupferpreis/",
+              label: "Kupferpreis",
+            },
+            {
+              url: "/messingpreise/",
+              label: "Messingpreis",
+            },
+            {
+              url: "/zinkpreis/",
+              label: "Zinkpreis",
+            },
+            {
+              url: "/zinnpreis/",
+              label: "Zinnpreis",
+            },
+          ]}
         />
 
         <Dropdown
@@ -176,30 +215,6 @@ class NavMenuDropdownList extends React.Component {
           key={"uber-uns"}
           element={"uber-uns"}
           dropdownLabel={"Über uns"}
-          linkList={[
-            {
-              url: "/support/",
-              label: "So funktioniert's",
-            },
-
-            {
-              url: "/standorte/",
-              label: "Standorte",
-            },
-            {
-              url: "/presse/",
-              label: "Presse",
-            },
-
-            {
-              url: "/blog/",
-              label: "Blog ",
-            },
-            {
-              url: "/ueber-uns/",
-              label: "Über uns",
-            },
-          ]}
         />
       </>
     );
