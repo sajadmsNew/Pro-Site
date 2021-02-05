@@ -151,8 +151,59 @@ class NavMenuDropdownList extends React.Component {
           dropdownLabel={"Marktdaten"}
           linkList={[
             {
-              url: "/item/",
-              label: "item",
+              url: "/schrottpreise ",
+              label: "Schrottpreise",
+            },
+
+            {
+              url: "/aluminiumpreis/",
+              label: "Aluminiumpreis",
+            },
+            {
+              url: "/bleipreise/",
+              label: "Bleipreis",
+            },
+
+            {
+              url: "/edelstahlpreis/",
+              label: "Edelstahlpreis",
+            },
+            {
+              url: "/eisenpreise/",
+              label: "Eisenpreis",
+            },
+            {
+              url: "/stahlpreise/",
+              label: "Stahlpreis",
+            },
+            {
+              url: "/elektroschrottpreise/",
+              label: "Elektroschrottpreis",
+            },
+
+            {
+              url: "/hartmetallpreis/",
+              label: "Hartmetallpreis",
+            },
+            {
+              url: "/kabelpreise/",
+              label: "Kabelpreis",
+            },
+            {
+              url: "/kupferpreis/",
+              label: "Kupferpreis",
+            },
+            {
+              url: "/messingpreise/",
+              label: "Messingpreis",
+            },
+            {
+              url: "/zinkpreis/",
+              label: "Zinkpreis",
+            },
+            {
+              url: "/zinnpreis/",
+              label: "Zinnpreis",
             },
           ]}
         />
