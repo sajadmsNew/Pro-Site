@@ -41,6 +41,15 @@ class HeaderInput extends React.Component {
     };
   }
 
+  handleInputChange = event => {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+    this.setState({
+      [name]: value,
+    });
+  };
+
   static getDerivedStateFromProps(props, state) {
     if (props.loadedFromToken) {
       const numberOfElementsLoaded =
@@ -55,7 +64,6 @@ class HeaderInput extends React.Component {
   }
 
   onChange = value => {
-    let material = "";
     if (value.length) {
       material = value[0].materialId;
     }
@@ -64,6 +72,7 @@ class HeaderInput extends React.Component {
 
   onChangeKilos(event) {
     const value = event.currentTarget.value;
+    console.log(value);
     if (value === "" || !isNaN(value)) {
       this.setState({ weight: value, error: null });
     } else {

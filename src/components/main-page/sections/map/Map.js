@@ -11,6 +11,7 @@ class Map extends React.Component {
 
     return (
       <div className={styles.map}>
+        {/* <div className="cardContainerrr"> */}
         <div
           className={[
             common_styles.textWrapper,
@@ -52,13 +53,13 @@ class Map extends React.Component {
             {t("Verkaufen sie an uns")}
           </Link>
         </div>
-        <div className={styles.imageWrapper}>
+        {/* <div className={styles.imageWrapper}>
           <img
             src={map}
             className={[styles.mapImage, common_styles.sectionImage].join(" ")}
             alt="global world map"
           />
-        </div>
+        </div> */}
 
         <span
           className={[
@@ -80,7 +81,15 @@ class Map extends React.Component {
         >
           {t("Zusatzservice")}{" "}
         </span>
+        <div className={styles.imageWrapper}>
+          <img
+            src={map}
+            className={[styles.mapImage, common_styles.sectionImage].join(" ")}
+            alt="global world map"
+          />
+        </div>
       </div>
+      // </div>
     );
   }
 }

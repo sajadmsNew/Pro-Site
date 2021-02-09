@@ -2,7 +2,7 @@
 .map {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: $blue_1;
   // padding-top: 100px;
   padding-bottom: 100px;
@@ -12,12 +12,13 @@
   margin-right: 25px;
   padding-top: 0;
   height: 335px;
+  width: 457;
   color: white;
   padding-left: 150px;
 }
 .imageWrapper {
   overflow: hidden;
-  padding-right: 320px;
+  // padding-right: 320px;
 }
 .mapImage {
   //  : 685px;
